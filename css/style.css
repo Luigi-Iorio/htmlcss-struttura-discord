@@ -24,6 +24,10 @@ a {
   border: 2px dashed #000000;
 }
 
+.debug .border-w {
+  border: 2px dashed white;
+}
+
 .debug .border-l {
   border-left: 4px dashed #000000;
 }
@@ -87,6 +91,36 @@ a {
   background-color: #ffc0cb;
 }
 
+/* debug footer */
+.debug footer {
+  background-color: #23272a;
+}
+
+.debug .col {
+  height: 600px;
+  width: calc(70% / 4);
+  background-color: #20b2aa;
+}
+
+.debug .col.big {
+  width: 30%;
+  background-color: #f08080;
+}
+
+.debug .footer.bottom {
+  background-color: #7fffd4;
+  height: 80px;
+}
+
+.debug .bottone {
+  background-color: #ffb6c1;
+  padding: 5px;
+}
+
+.conte {
+  border-bottom: 2px solid #d7d7d8;
+}
+
 /* HEADER */
 
 /* header top */
@@ -143,4 +177,24 @@ nav {
 .cont.reverse {
   display: flex;
   flex-direction: row-reverse;
+}
+
+/* FOOTER */
+footer {
+  padding-top: 15px;
+}
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer.top {
+  margin-bottom: 40px;
+}
+
+.footer.bottom {
+  margin-top: 40px;
 }
