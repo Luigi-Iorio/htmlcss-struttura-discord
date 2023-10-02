@@ -60,7 +60,6 @@ a {
 
 .debug .box {
   height: 400px;
-  width: 900px;
   background-color: #ee82ee;
   border-radius: 10px;
 }
@@ -81,13 +80,11 @@ a {
 
 .debug .box1 {
   height: 100%;
-  width: 60%;
   background-color: #1e90ff;
 }
 
 .debug .box2 {
   height: 100%;
-  width: 40%;
   background-color: #ffc0cb;
 }
 
@@ -98,12 +95,10 @@ a {
 
 .debug .col {
   height: 600px;
-  width: calc(70% / 4);
   background-color: #20b2aa;
 }
 
 .debug .col.big {
-  width: 30%;
   background-color: #f08080;
 }
 
@@ -161,6 +156,10 @@ nav {
   align-items: center;
 }
 
+.box {
+  width: 900px;
+}
+
 /* MAIN */
 .section {
   padding: 50px 0;
@@ -177,6 +176,14 @@ nav {
 .cont.reverse {
   display: flex;
   flex-direction: row-reverse;
+}
+
+.box1 {
+  width: 60%;
+}
+
+.box2 {
+  width: 40%;
 }
 
 /* FOOTER */
@@ -197,4 +204,12 @@ footer {
 
 .footer.bottom {
   margin-top: 40px;
+}
+
+.col {
+  width: calc(70% / 4);
+}
+
+.col.big {
+  width: 30%;
 }
