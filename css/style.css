@@ -20,6 +20,18 @@ a {
 }
 
 /* DEBUG */
+.debug .border {
+  border: 2px dashed #000000;
+}
+
+.debug .border-l {
+  border-left: 4px dashed #000000;
+}
+
+.debug .border-r {
+  border-right: 4px dashed #000000;
+}
+
 .debug header {
   background-color: #add8e6;
 }
@@ -27,13 +39,10 @@ a {
 .debug nav {
   height: 50px;
   background-color: #daa520;
-  border: 2px dashed #000000;
 }
 
 .debug .menu {
   height: 100%;
-  border-left: 4px dashed #000000;
-  border-right: 4px dashed #000000;
 }
 
 .debug a {
@@ -49,8 +58,33 @@ a {
   height: 400px;
   width: 900px;
   background-color: #ee82ee;
-  border: 2px dashed #000000;
   border-radius: 10px;
+}
+
+/* debug main */
+.debug .section:nth-child(even) {
+  background-color: #d3d3d3;
+}
+
+.debug .cont {
+  height: 500px;
+}
+
+.debug .section:last-child .cont {
+  height: 900px;
+  background-color: #228b22;
+}
+
+.debug .box1 {
+  height: 100%;
+  width: 60%;
+  background-color: #1e90ff;
+}
+
+.debug .box2 {
+  height: 100%;
+  width: 40%;
+  background-color: #ffc0cb;
 }
 
 /* HEADER */
@@ -91,4 +125,22 @@ nav {
   flex-direction: row;
   justify-content: center;
   align-items: center;
+}
+
+/* MAIN */
+.section {
+  padding: 50px 0;
+}
+
+.cont {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.cont.reverse {
+  display: flex;
+  flex-direction: row-reverse;
 }
